@@ -1,0 +1,44 @@
+aid: camara
+name: CAMARA
+description: >-
+  CAMARA is a Linux Foundation project developing standardized telecom APIs as part of the Telco Global API Alliance. Supported by AT&T, Deutsche Telekom, Ericsson, Google Cloud, Microsoft, Nokia, and Vodafone, it enables developers to access operator capabilities through a unified, global API framework.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Telecom
+  - API
+  - Network
+  - Linux Foundation
+created: '2026-03-16'
+modified: '2026-03-16'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/camara/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: camara:camara-api
+    name: CAMARA API
+    description: >-
+      Programmatic access to CAMARA standardized telecom APIs, network capability interfaces, and operator service tools.
+    humanURL: https://camaraproject.org/apis/
+    tags:
+  - Telecom
+  - API
+  - Network
+  - Linux Foundation
+    properties:
+      - type: Documentation
+        url: https://camaraproject.org/apis/
+common:
+  - type: Documentation
+    name: CAMARA Documentation
+    description: Official documentation for CAMARA.
+    url: https://camaraproject.org/apis/
+  - type: GitHubOrg
+    name: CAMARA GitHub
+    description: Source code and repositories for CAMARA.
+    url: https://github.com/camaraproject
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
