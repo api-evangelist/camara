@@ -7,10 +7,9 @@ position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Telecom
-  - API
-  - Network
   - Linux Foundation
+  - Network
+  - Telecom
 created: '2026-03-16'
 modified: '2026-03-16'
 url: >-
@@ -23,10 +22,9 @@ apis:
       Programmatic access to CAMARA standardized telecom APIs, network capability interfaces, and operator service tools.
     humanURL: https://camaraproject.org/apis/
     tags:
-      - Telecom
-      - API
-      - Network
       - Linux Foundation
+      - Network
+      - Telecom
     properties:
       - type: Documentation
         url: https://camaraproject.org/apis/
