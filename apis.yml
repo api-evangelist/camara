@@ -23,10 +23,10 @@ apis:
       Programmatic access to CAMARA standardized telecom APIs, network capability interfaces, and operator service tools.
     humanURL: https://camaraproject.org/apis/
     tags:
-  - Telecom
-  - API
-  - Network
-  - Linux Foundation
+      - Telecom
+      - API
+      - Network
+      - Linux Foundation
     properties:
       - type: Documentation
         url: https://camaraproject.org/apis/
