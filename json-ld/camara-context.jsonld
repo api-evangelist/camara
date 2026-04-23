@@ -1,0 +1,142 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "camara": "https://camaraproject.org/vocab#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+
+    "Session": {
+      "@id": "camara:Session",
+      "@context": {
+        "sessionId": {
+          "@id": "schema:identifier",
+          "@type": "xsd:string"
+        },
+        "device": {
+          "@id": "camara:device",
+          "@type": "@id"
+        },
+        "qosProfile": "camara:qosProfile",
+        "duration": {
+          "@id": "schema:duration",
+          "@type": "xsd:integer"
+        },
+        "startedAt": {
+          "@id": "schema:startTime",
+          "@type": "xsd:dateTime"
+        },
+        "expiresAt": {
+          "@id": "schema:endTime",
+          "@type": "xsd:dateTime"
+        },
+        "status": "camara:sessionStatus"
+      }
+    },
+
+    "Device": {
+      "@id": "camara:Device",
+      "@context": {
+        "phoneNumber": "schema:telephone",
+        "networkAccessIdentifier": "camara:networkAccessIdentifier",
+        "ipv4Address": "camara:ipv4Address",
+        "ipv6Address": "camara:ipv6Address"
+      }
+    },
+
+    "Area": {
+      "@id": "camara:Area",
+      "@context": {
+        "areaType": "camara:areaType",
+        "center": {
+          "@id": "schema:geo",
+          "@type": "@id"
+        },
+        "radius": {
+          "@id": "camara:radius",
+          "@type": "xsd:integer"
+        }
+      }
+    },
+
+    "LocationVerificationResult": {
+      "@id": "camara:LocationVerificationResult",
+      "@context": {
+        "verificationResult": "camara:verificationResult",
+        "lastLocationTime": {
+          "@id": "camara:lastLocationTime",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "NumberVerificationResult": {
+      "@id": "camara:NumberVerificationResult",
+      "@context": {
+        "devicePhoneNumberVerified": {
+          "@id": "camara:devicePhoneNumberVerified",
+          "@type": "xsd:boolean"
+        }
+      }
+    },
+
+    "SimSwapCheck": {
+      "@id": "camara:SimSwapCheck",
+      "@context": {
+        "swapped": {
+          "@id": "camara:swapped",
+          "@type": "xsd:boolean"
+        },
+        "latestSimChange": {
+          "@id": "camara:latestSimChange",
+          "@type": "xsd:dateTime"
+        },
+        "maxAge": {
+          "@id": "camara:maxAge",
+          "@type": "xsd:integer"
+        }
+      }
+    },
+
+    "Subscription": {
+      "@id": "camara:Subscription",
+      "@context": {
+        "subscriptionId": "schema:identifier",
+        "webhookUrl": {
+          "@id": "camara:webhookUrl",
+          "@type": "@id"
+        },
+        "eventType": "camara:eventType",
+        "expiresAt": {
+          "@id": "schema:validThrough",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Consent": {
+      "@id": "camara:Consent",
+      "@context": {
+        "subject": {
+          "@id": "schema:identifier",
+          "@type": "@id"
+        },
+        "scope": "schema:scope",
+        "grantedAt": {
+          "@id": "dcterms:issued",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "EdgeZone": {
+      "@id": "camara:EdgeZone",
+      "@context": {
+        "name": "schema:name",
+        "edgeCloudProvider": "camara:edgeCloudProvider",
+        "edgeResourceName": "camara:edgeResourceName"
+      }
+    }
+  }
+}

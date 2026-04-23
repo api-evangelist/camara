@@ -1,0 +1,56 @@
+vocabulary: camara
+description: >-
+  Controlled vocabulary for CAMARA Project telecom APIs. Defines concepts and
+  terms common across CAMARA standardized network APIs.
+version: '1.0.0'
+concepts:
+  - term: Session
+    definition: >-
+      A bounded-duration resource representing an active quality-on-demand or
+      network capability reservation for a specific device flow.
+  - term: QoSProfile
+    definition: >-
+      A named network quality profile (e.g. low latency, high throughput) that
+      can be requested on behalf of a device flow.
+  - term: DeviceIdentifier
+    definition: >-
+      A reference to a mobile device, expressible as MSISDN (phone number),
+      IPv4 address plus optional port, IPv6 address, or network access
+      identifier.
+  - term: Area
+    definition: >-
+      A geometry (circle, polygon) representing a region of interest for
+      location verification or geofencing subscriptions.
+  - term: Subscription
+    definition: >-
+      A client's registered interest in asynchronous events such as geofence
+      crossings, device status changes, or session state transitions.
+  - term: Consent
+    definition: >-
+      A recorded agreement from the end subscriber authorizing an application
+      to use a specific network capability on their behalf.
+  - term: NetworkCapability
+    definition: >-
+      A programmable network feature exposed as a CAMARA API, such as
+      QualityOnDemand, DeviceLocation, NumberVerification, or SimSwap.
+  - term: EdgeZone
+    definition: >-
+      An operator Mobile Edge Cloud zone available for low-latency compute
+      placement close to an end device.
+  - term: SimSwapEvent
+    definition: >-
+      The event of a subscriber's SIM card being replaced, which may indicate
+      account-takeover risk.
+  - term: NumberVerificationResult
+    definition: >-
+      The boolean outcome, plus confidence, of comparing a claimed phone
+      number against the SIM bound to the requesting data session.
+mappings:
+  - term: Session
+    schema_org: schema:Reservation
+  - term: Area
+    schema_org: schema:GeoShape
+  - term: DeviceIdentifier
+    schema_org: schema:identifier
+  - term: Consent
+    schema_org: schema:Permit
