@@ -48,6 +48,8 @@ apis:
         url: https://github.com/camaraproject/QualityOnDemand
       - type: Repository
         url: https://github.com/camaraproject/QualityOnDemand
+      - type: OpenAPI
+        url: openapi/camara-openapi.yml
   - aid: camara:device-location-api
     name: CAMARA Device Location API
     description: >-
