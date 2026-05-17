@@ -9,7 +9,7 @@ description: >-
   can access programmable network services such as quality-on-demand, device
   location, SIM swap, number verification, and edge cloud across multiple
   carriers through a single, unified, standard API surface.
-type: Standard
+kind: standard
 position: Provider
 access: Open
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
@@ -254,7 +254,7 @@ common:
     url: https://github.com/camaraproject/ReleaseManagement
   - type: LinuxFoundationProject
     url: https://lfnetworking.org/projects/camara/
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/camara-context.jsonld
   - type: VocabularyDefinition
     url: vocabulary.yml
