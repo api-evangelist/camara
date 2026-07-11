@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/camara-openapi.yml
+schemes:
+- name: oAuth2ClientCredentials
+  source: openapi/camara-openapi.yml
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://api.example.com/oauth2/token
+scopes:
+- scope: qod
+  description: Quality On Demand session management
+  flows:
+  - clientCredentials
+  sources:
+  - openapi/camara-openapi.yml

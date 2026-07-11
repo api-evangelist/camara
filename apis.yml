@@ -215,6 +215,8 @@ apis:
       - type: Repository
         url: https://github.com/camaraproject/IdentityAndConsentManagement
 common:
+  - type: OAuthScopes
+    url: scopes/camara-scopes.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/camara-project
   - type: Website
@@ -243,6 +245,8 @@ common:
     url: vocabulary.yml
   - type: SpectralRules
     url: spectral/camara.spectral.yml
+  - type: Blog
+    url: https://camaraproject.org/feed/
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
