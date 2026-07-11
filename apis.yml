@@ -215,6 +215,10 @@ apis:
       - type: Repository
         url: https://github.com/camaraproject/IdentityAndConsentManagement
 common:
+  - type: DomainSecurity
+    url: security/camara-domain-security.yml
+  - type: Authentication
+    url: authentication/camara-authentication.yml
   - type: OAuthScopes
     url: scopes/camara-scopes.yml
   - type: LinkedIn
