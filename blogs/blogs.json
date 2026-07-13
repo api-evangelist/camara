@@ -1,0 +1,13 @@
+{
+  "repo": "camara",
+  "feeds": [
+    {
+      "source": "https://camaraproject.org/",
+      "feed_url": "https://camaraproject.org/feed/",
+      "title": "Camara Project",
+      "saved": 0
+    }
+  ],
+  "fetched": "2026-07-11T11:43:46Z",
+  "post_count": 10
+}
