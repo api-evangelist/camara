@@ -215,6 +215,8 @@ apis:
       - type: Repository
         url: https://github.com/camaraproject/IdentityAndConsentManagement
 common:
+  - type: AgenticAccess
+    url: agentic-access/camara-agentic-access.yml
   - type: DomainSecurity
     url: security/camara-domain-security.yml
   - type: Authentication
