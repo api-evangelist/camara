@@ -1,42 +1,43 @@
 openapi: 3.1.0
 info:
-  title: CAMARA Quality On Demand API
-  version: "1.0"
-  description: >-
-    Minimal OpenAPI 3.1 description of the CAMARA Quality On Demand (QoD) API
-    for requesting bounded-duration network quality sessions on behalf of
-    devices. Endpoints derived from the public CAMARA QoD specification.
+  title: CAMARA Quality On Demand Sessions API
+  version: '1.0'
+  description: Minimal OpenAPI 3.1 description of the CAMARA Quality On Demand (QoD) API for requesting bounded-duration network quality sessions on behalf of devices. Endpoints derived from the public CAMARA QoD specification.
   x-generated-from: https://github.com/camaraproject/QualityOnDemand
   x-generated-by: claude-crawl-2026-05-08
 servers:
-  - url: https://api.example.com/quality-on-demand/v0
-    description: Reference server (operator-specific in practice)
+- url: https://api.example.com/quality-on-demand/v0
+  description: Reference server (operator-specific in practice)
 security:
-  - oAuth2ClientCredentials: []
+- oAuth2ClientCredentials: []
 tags:
-  - name: Sessions
+- name: Sessions
 paths:
   /sessions:
     post:
-      tags: [Sessions]
+      tags:
+      - Sessions
       summary: Create a new QoS session
       operationId: createSession
       requestBody:
         required: true
         content:
           application/json:
-            schema: { $ref: '#/components/schemas/QoDSession' }
+            schema:
+              $ref: '#/components/schemas/QoDSession'
       responses:
         '201':
           description: Session created
           content:
             application/json:
-              schema: { $ref: '#/components/schemas/QoDSession' }
+              schema:
+                $ref: '#/components/schemas/QoDSession'
   /sessions/{sessionId}:
     parameters:
-      - $ref: '#/components/parameters/SessionIdParam'
+    - $ref: '#/components/parameters/SessionIdParam'
     get:
-      tags: [Sessions]
+      tags:
+      - Sessions
       summary: Get QoS session information
       operationId: getSession
       responses:
@@ -44,9 +45,11 @@ paths:
           description: OK
           content:
             application/json:
-              schema: { $ref: '#/components/schemas/QoDSession' }
+              schema:
+                $ref: '#/components/schemas/QoDSession'
     delete:
-      tags: [Sessions]
+      tags:
+      - Sessions
       summary: Delete a QoS session
       operationId: deleteSession
       responses:
@@ -54,32 +57,37 @@ paths:
           description: Deleted
   /sessions/{sessionId}/extend:
     parameters:
-      - $ref: '#/components/parameters/SessionIdParam'
+    - $ref: '#/components/parameters/SessionIdParam'
     post:
-      tags: [Sessions]
+      tags:
+      - Sessions
       summary: Extend the duration of an active session
       operationId: extendSession
       requestBody:
         required: true
         content:
           application/json:
-            schema: { $ref: '#/components/schemas/QoDSession' }
+            schema:
+              $ref: '#/components/schemas/QoDSession'
       responses:
         '200':
           description: OK
           content:
             application/json:
-              schema: { $ref: '#/components/schemas/QoDSession' }
+              schema:
+                $ref: '#/components/schemas/QoDSession'
   /retrieve-sessions:
     post:
-      tags: [Sessions]
+      tags:
+      - Sessions
       summary: Get QoS session information for a device
       operationId: retrieveSessionsForDevice
       requestBody:
         required: true
         content:
           application/json:
-            schema: { $ref: '#/components/schemas/QoDSession' }
+            schema:
+              $ref: '#/components/schemas/QoDSession'
       responses:
         '200':
           description: OK
@@ -90,14 +98,6 @@ paths:
                 items:
                   $ref: '#/components/schemas/QoDSession'
 components:
-  securitySchemes:
-    oAuth2ClientCredentials:
-      type: oauth2
-      flows:
-        clientCredentials:
-          tokenUrl: https://api.example.com/oauth2/token
-          scopes:
-            qod: Quality On Demand session management
   parameters:
     SessionIdParam:
       name: sessionId
@@ -110,3 +110,11 @@ components:
     QoDSession:
       type: object
       additionalProperties: true
+  securitySchemes:
+    oAuth2ClientCredentials:
+      type: oauth2
+      flows:
+        clientCredentials:
+          tokenUrl: https://api.example.com/oauth2/token
+          scopes:
+            qod: Quality On Demand session management
