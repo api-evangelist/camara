@@ -1,0 +1,14 @@
+{
+  "provider": "camara",
+  "sources": [
+    "camara-sessions-api-openapi.yml"
+  ],
+  "outputs": [
+    "camara-sessions-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
