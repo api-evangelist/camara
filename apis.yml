@@ -224,6 +224,13 @@ apis:
   - type: Repository
     url: https://github.com/camaraproject/QualityOnDemand
 common:
+  - type: IssueTracker
+    url: https://github.com/camaraproject/DeviceLocation/issues
+  - type: Releases
+    url: https://github.com/camaraproject/DeviceLocation/releases
+  - type: License
+    name: Apache-2.0
+    url: https://github.com/camaraproject/DeviceLocation/blob/main/LICENSE
   - type: AgenticAccess
     url: agentic-access/camara-agentic-access.yml
   - type: DomainSecurity
