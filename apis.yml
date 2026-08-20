@@ -103,6 +103,10 @@ apis:
   tags:
   - Connectivity
   - Roaming
+  - Event
+  tags_raw:
+  - Connectivity
+  - Roaming
   - Events
   properties:
   - type: Documentation
@@ -167,6 +171,10 @@ apis:
   baseURL: https://api.example.com/home-devices-qod/v0
   tags:
   - Broadband
+  - Homes
+  - QoS
+  tags_raw:
+  - Broadband
   - Home
   - QoS
   properties:
@@ -200,6 +208,11 @@ apis:
   humanURL: https://github.com/camaraproject/IdentityAndConsentManagement
   baseURL: https://api.example.com/identity-consent/v0
   tags:
+  - Authentication
+  - CIBA
+  - Consent
+  - Identity
+  tags_raw:
   - OAuth
   - CIBA
   - Consent
