@@ -7,6 +7,19 @@ description: >-
   capability APIs so developers can access programmable network services such as quality-on-demand, device location, SIM
   swap, number verification, and edge cloud across multiple carriers through a single, unified, standard API surface.
 kind: standard
+deliveryModel:
+  model: self-hosted
+  license: Apache-2.0
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
