@@ -65,6 +65,10 @@ apis:
   tags:
   - Location
   - Geofencing
+  - Networks
+  tags_raw:
+  - Location
+  - Geofencing
   - Network
   properties:
   - type: Documentation
